@@ -216,7 +216,7 @@
       "name": "🎬测试资源",
       "api": "https://test.net/api.php/provide/vod",
       "detail": "https://test.net"
-    },    
+    }
   }
 
 }
