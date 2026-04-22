@@ -69,6 +69,59 @@ def encode_output_base58():
         print("✅ output.json 已编码为 Base58 并保存为 output_base58.txt")
     except Exception as e:
         print(f"❌ Base58 编码失败: {e}")
+
+# 将 input.json 的 api_site 添加到 LunaTV-config.json 的分割标记之后
+def update_luna_tv_config():
+    """
+    将 input.json 的 api_site 添加到 LunaTV-config.json 的分割标记之后
+    步骤：
+    1. 读取 LunaTV-config.json 文件
+    2. 找到分割标记项（lovedan.net）
+    3. 清除分割标记之后的所有 api_site 项目
+    4. 读取 input.json 文件，获取其 api_site
+    5. 将 input.json 的 api_site 添加到分割标记之后
+    6. 保存修改后的 LunaTV-config.json 文件
+    """
+    LUNA_CONFIG_FILE = 'LunaTV-config.json'
+    try:
+        # 读取 LunaTV-config.json
+        with open(LUNA_CONFIG_FILE, 'r', encoding='utf-8') as f:
+            luna_data = json.load(f)
+        
+        # 读取 input.json
+        with open(INPUT_FILE, 'r', encoding='utf-8') as f:
+            input_data = json.load(f)
+        
+        input_api_site = input_data.get('api_site', {})
+        
+        # 找到分割标记项的位置
+        split_key = None
+        api_site_items = list(luna_data.get('api_site', {}).items())
+        for i, (key, value) in enumerate(api_site_items):
+            if value.get('_comment') == '无法搜索1-分割标记':
+                split_key = key
+                split_index = i
+                break
+        
+        if split_key:
+            # 保留分割标记之前的项目，加上分割标记本身
+            new_api_site = dict(api_site_items[:split_index + 1])
+            
+            # 添加 input.json 的 api_site
+            new_api_site.update(input_api_site)
+            
+            # 更新 luna_data
+            luna_data['api_site'] = new_api_site
+            
+            # 保存修改后的文件
+            with open(LUNA_CONFIG_FILE, 'w', encoding='utf-8') as f:
+                json.dump(luna_data, f, ensure_ascii=False, indent=2)
+            
+            print(f"✅ 已将 input.json 的 api_site 添加到 {LUNA_CONFIG_FILE} 的分割标记之后")
+        else:
+            print("❌ 未找到分割标记项")
+    except Exception as e:
+        print(f"❌ 更新 LunaTV-config.json 失败: {e}")
 def validate_token(token):
     try:
         r = requests.get("https://api.github.com/user", headers={"Authorization": f"token {token}"})
@@ -258,6 +311,7 @@ async def main():
     print(f"💾 输出文件已保存为 {OUTPUT_FILE}")
     replace_input_with_output()
     encode_output_base58()
+    update_luna_tv_config()
 # 运行
 if __name__ == '__main__':
     asyncio.run(main())

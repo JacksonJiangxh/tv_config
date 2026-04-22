@@ -110,7 +110,7 @@ jobs:
           git reset --soft origin/main
 
           # 添加所有生成文件
-          git add jingjian.json jin18.json input.txt jingjian.txt jin18.txt report.md README.md input.json output_base58.txt failed_apis.log github_sources.log
+          git add LunaTV-config.json jingjian.json jin18.json LunaTV-config.txt jingjian.txt jin18.txt report.md README.md input.json output_base58.txt failed_apis.log github_sources.log
 
           # 提交更新，如果没有变化则输出提示
           git commit -m "自动更新 JSON、Base58 和 API 报告 ($(date -d '+8 hour' +'%Y-%m-%d %H:%M:%S CST'))" || echo "⚠️ 没有文件变化可提交"

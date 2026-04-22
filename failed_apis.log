@@ -37203,3 +37203,12 @@
 [2026-04-22 16:34:26] https://sdzyapi.com/api.php/provide/vod - 
 [2026-04-22 16:34:26] https://api.ukuapi88.com/api.php/provide/art/?ac=list - 
 [2026-04-22 16:34:26] https://api.ukuapi.com/api.php/provide/vod/ - 
+[2026-04-23 00:55:19] https://api.1080zyku.com/api.php/provide/vod - Cannot connect to host api.1080zyku.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 00:55:19] https://api.1080zyku.com/inc/api_mac10.php - Cannot connect to host api.1080zyku.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 00:55:19] https://api.1080zyku.com/inc/apijson.php - Cannot connect to host api.1080zyku.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 00:55:19] https://api.1080zyku.com/inc/apijson.php/ - Cannot connect to host api.1080zyku.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 00:55:19] https://ikunzyapi.com/api.php/provide/vod - Cannot connect to host ikunzyapi.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 00:55:19] https://ikunzyapi.com/api.php/provide/vod/at/json - Cannot connect to host ikunzyapi.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 00:55:19] https://cj.lzcaiji.com/api.php/provide/vod - Cannot connect to host cj.lzcaiji.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 00:55:20] https://www.moduzy.com/api.php/provide/vod - Cannot connect to host www.moduzy.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 00:55:21] https://www.ikunzy.com/api.php/provide/vod - Cannot connect to host www.ikunzy.com:443 ssl:default [指定的网络名不再可用。]

@@ -207,10 +207,16 @@
       "detail": "https://p2100.net"
     },
     "lovedan.net": {
-      "_comment": "无法搜索1",
+      "_comment": "无法搜索1-分割标记",
       "name": "🎬艾旦影视",
       "api": "https://lovedan.net/api.php/provide/vod",
       "detail": "https://lovedan.net"
-    }
+    },
+    "test.net": {
+      "name": "🎬测试资源",
+      "api": "https://test.net/api.php/provide/vod",
+      "detail": "https://test.net"
+    },    
   }
+
 }
