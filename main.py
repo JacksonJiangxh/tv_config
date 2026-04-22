@@ -265,23 +265,61 @@ async def check_api(session, api_url, name):
         log_failed(api_url, str(e))
         return False
 
+# URL规范化函数
+def normalize_api_url(url):
+    """
+    规范化API URL，去掉特定参数部分
+    规则：
+    1. 去掉查询参数（以?开头的部分）
+    2. 去掉/at/xxx部分
+    3. 去掉/from/xxx/at/xxx部分
+    """
+    # 去掉查询参数
+    if '?' in url:
+        url = url.split('?')[0]
+    
+    # 去掉/from/xxx/at/xxx部分
+    if '/from/' in url:
+        parts = url.split('/from/')
+        if len(parts) > 1:
+            base_part = parts[0]
+            url = base_part
+    
+    # 去掉/at/xxx部分
+    if '/at/' in url:
+        parts = url.split('/at/')
+        if len(parts) > 1:
+            url = parts[0]
+    
+    # 移除末尾的斜杠
+    url = url.rstrip('/')
+    
+    return url
+
 # 主流程
 async def main():
     all_sites = {}
+    normalized_urls = set()  # 用于存储规范化后的URL
     all_categories = []
 
     local_sites = load_local_json()
     for site in local_sites.values():
         api_url = site.get("api")
-        if api_url and api_url not in all_sites:
-            all_sites[api_url] = site
+        if api_url:
+            normalized = normalize_api_url(api_url)
+            if normalized not in normalized_urls:
+                normalized_urls.add(normalized)
+                all_sites[api_url] = site
 
     for item in search_github_configs():
         result = fetch_and_extract_api_sites(item)
         for site in result["api_site"].values():
             api_url = site.get("api")
-            if api_url and api_url not in all_sites:
-                all_sites[api_url] = site
+            if api_url:
+                normalized = normalize_api_url(api_url)
+                if normalized not in normalized_urls:
+                    normalized_urls.add(normalized)
+                    all_sites[api_url] = site
         all_categories.extend(result["custom_category"])
 
     connector = aiohttp.TCPConnector(ssl=False)

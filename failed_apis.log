@@ -37212,3 +37212,15 @@
 [2026-04-23 00:55:19] https://cj.lzcaiji.com/api.php/provide/vod - Cannot connect to host cj.lzcaiji.com:443 ssl:default [指定的网络名不再可用。]
 [2026-04-23 00:55:20] https://www.moduzy.com/api.php/provide/vod - Cannot connect to host www.moduzy.com:443 ssl:default [指定的网络名不再可用。]
 [2026-04-23 00:55:21] https://www.ikunzy.com/api.php/provide/vod - Cannot connect to host www.ikunzy.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 01:11:44] https://api.1080zyku.com/inc/api_mac10.php - Cannot connect to host api.1080zyku.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 01:11:44] https://api.1080zyku.com/inc/apijson.php/ - Cannot connect to host api.1080zyku.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 01:11:44] https://api.1080zyku.com/inc/apijson.php - Cannot connect to host api.1080zyku.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 01:11:44] https://api.1080zyku.com/api.php/provide/vod - Cannot connect to host api.1080zyku.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 01:11:44] https://ikunzyapi.com/api.php/provide/vod - Cannot connect to host ikunzyapi.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 01:11:44] https://cj.lzcaiji.com/api.php/provide/vod - Cannot connect to host cj.lzcaiji.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 01:11:44] https://www.moduzy.com/api.php/provide/vod - Cannot connect to host www.moduzy.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 01:11:45] https://www.ikunzy.com/api.php/provide/vod - Cannot connect to host www.ikunzy.com:443 ssl:default [指定的网络名不再可用。]
+[2026-04-23 01:11:45] https://zy.jinchancaiji.com/api.php/provide/vod - Status 502
+[2026-04-23 01:11:48] https://www.qiqidys.com/api.php/provide/vod/ - Cannot connect to host ww1.qiqidys.com:80 ssl:default [getaddrinfo failed]
+[2026-04-23 01:11:48] https://luna-config.chimiansw.workers.dev/?url=https://caiji.kuaichezy.org/api.php/provide - 
+[2026-04-23 01:11:48] https://apilj.com/api.php/provide - 
