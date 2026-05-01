@@ -244,33 +244,23 @@
       "api": "http://api.okzyw.net/api.php/provide/vod"
     },
     "56": {
-      "api": "https://taopianapi.com/cjapi/mc/vod/json.html",
-      "name": "淘片",
-      "detail": "https://www.taopianzy.com/index.html"
-    },
-    "57": {
       "name": "美少女资源",
       "api": "https://www.msnii.com/api/json.php",
       "detail": "https://www.msnii.com"
     },
-    "58": {
+    "57": {
       "api": "https://xsd.sdzyapi.com/api.php/provide/vod",
       "name": "索尼-闪电资源"
     },
-    "59": {
+    "58": {
       "name": "闪电",
       "api": "http://sdzyapi.com/api.php/provide/vod",
       "detail": "http://sdzyapi.com"
     },
-    "60": {
+    "59": {
       "name": "🎬-爱奇艺-",
       "api": "https://iqiyizyapi.com/api.php/provide/vod",
       "detail": "https://iqiyizyapi.com"
-    },
-    "61": {
-      "name": "淫水机资源",
-      "api": "https://www.xrbsp.com/api/json.php",
-      "detail": "https://www.xrbsp.com"
     }
   }
 }
