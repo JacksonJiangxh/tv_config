@@ -76,29 +76,14 @@
       "name": "360资源"
     },
     "17": {
-      "api": "https://api.maoyanapi.top/api.php/provide",
-      "name": "猫眼资源",
-      "detail": "https://www.maoyanzy.com"
-    },
-    "18": {
       "api": "http://ffzy5.tv/api.php/provide/vod",
       "name": "非凡影视",
       "detail": "http://ffzy5.tv"
     },
-    "19": {
+    "18": {
       "name": "🎬魔都资源",
       "api": "https://www.mdzyapi.com/api.php/provide/vod",
       "detail": "https://www.moduzy.net"
-    },
-    "20": {
-      "name": "🎬猫眼资源",
-      "api": "https://api.maoyanapi.top/api.php/provide/vod",
-      "detail": "https://www.maoyanzy.com"
-    },
-    "21": {
-      "name": "🎬-爱奇艺-",
-      "api": "https://iqiyizyapi.com/api.php/provide/vod",
-      "detail": "https://iqiyizyapi.com"
     }
   },
   "custom_category": [
