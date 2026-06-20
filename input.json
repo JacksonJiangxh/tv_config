@@ -68,19 +68,15 @@
       "detail": "https://caiji.moduapi.cc"
     },
     "15": {
-      "api": "https://www.suoniapi.com/api.php/provide/vod/",
-      "name": "索尼资源"
-    },
-    "16": {
       "api": "https://360zy.com/api.php/provide/vod",
       "name": "360资源"
     },
-    "17": {
+    "16": {
       "api": "http://ffzy5.tv/api.php/provide/vod",
       "name": "非凡影视",
       "detail": "http://ffzy5.tv"
     },
-    "18": {
+    "17": {
       "name": "🎬魔都资源",
       "api": "https://www.mdzyapi.com/api.php/provide/vod",
       "detail": "https://www.moduzy.net"
