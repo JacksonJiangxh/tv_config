@@ -263,27 +263,23 @@
       "api": "http://www.qilinzyz.com/api.php/provide/vod"
     },
     "12": {
-      "api": "https://api.yzzy-api.com/inc/apijson.php",
-      "name": "优质资源"
-    },
-    "13": {
       "_comment": "暂不支持搜索",
       "name": "索尼资源",
       "api": "https://suoniapi.com/api.php/provide/vod",
       "detail": "https://suonizy.net",
       "isAdult": false
     },
-    "14": {
+    "13": {
       "name": "🎬魔都动漫",
       "api": "https://caiji.moduapi.cc/api.php/provide/vod",
       "detail": "https://caiji.moduapi.cc"
     },
-    "15": {
+    "14": {
       "api": "http://ffzy5.tv/api.php/provide/vod",
       "name": "非凡影视",
       "detail": "http://ffzy5.tv"
     },
-    "16": {
+    "15": {
       "name": "🎬魔都资源",
       "api": "https://www.mdzyapi.com/api.php/provide/vod",
       "detail": "https://www.moduzy.net"
