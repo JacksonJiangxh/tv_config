@@ -34,7 +34,7 @@ jobs:
       - name: Run script
         run: python main.py
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKENN }}
+          GH_TOKEN: ${{ secrets.TVCONFIG }}
 
       # 3️⃣ JSON 处理：生成 jingjian.json
       - name: Generate jingjian.json (strip _comment)
