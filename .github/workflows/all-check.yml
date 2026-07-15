@@ -74,7 +74,10 @@ jobs:
           const files = [
             { input: 'input.json', output: 'input.txt' },
             { input: 'jingjian.json', output: 'jingjian.txt' },
-            { input: 'jin18.json', output: 'jin18.txt' }
+            { input: 'jin18.json', output: 'jin18.txt' },
+            { input: 'LunaTV-config.json', output: 'LunaTV-config.txt' },
+            { input: 'output.json', output: 'output.txt' },
+            { input: 'output_top20.json', output: 'output_top20.txt' }
           ];
 
           files.forEach(file => {
@@ -109,8 +112,12 @@ jobs:
           git fetch origin main
           git reset --soft origin/main
 
-          # 添加所有生成文件
-          git add LunaTV-config.json jingjian.json jin18.json LunaTV-config.txt jingjian.txt jin18.txt report.md README.md input.json output_base58.txt failed_apis.log github_sources.log
+          # 添加所有生成文件（含 main.py 产出的全量 output 与 Top20 精修结果）
+          git add LunaTV-config.json LunaTV-config.txt \
+                  output.json output.txt output_base58.txt \
+                  output_top20.json output_top20.txt output_top20_base58.txt \
+                  jingjian.json jin18.json jingjian.txt jin18.txt \
+                  report.md README.md input.json failed_apis.log github_sources.log
 
           # 提交更新，如果没有变化则输出提示
           git commit -m "自动更新 JSON、Base58 和 API 报告 ($(date -d '+8 hour' +'%Y-%m-%d %H:%M:%S CST'))" || echo "⚠️ 没有文件变化可提交"

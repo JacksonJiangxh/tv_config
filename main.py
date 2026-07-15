@@ -1,5 +1,6 @@
 
 import json
+import re
 import aiohttp
 import asyncio
 import requests
@@ -19,7 +20,9 @@ MAX_RETRIES = 3
 GITHUB_TOKEN = os.getenv("GH_TOKEN", "")
 
 SENSITIVE_KEYWORDS = [
-    "内射", "中出", "强奸", "调教", "乱伦", "sm", "黑料", "母狗", "精液", "无码", "有码"]
+    "内射", "中出", "强奸", "调教", "乱伦", "sm", "黑料", "母狗", "精液",
+    "无码", "有码", "av", "成人", "色情", "番号", "白嫖", "淫水",
+    "美少女", "香奶儿", "性爱", "麻豆", "高潮", "做爱"]
 DEFAULT_CATEGORIES = [
     { "name": "热门", "type": "movie", "query": "热门" },
     { "name": "最新", "type": "movie", "query": "最新" },
@@ -109,7 +112,10 @@ def update_luna_tv_config():
             
             # 添加 input.json 的 api_site
             new_api_site.update(input_api_site)
-            
+
+            # 过滤成人 / AV 资源，避免被再次写入配置
+            new_api_site = {k: v for k, v in new_api_site.items() if not is_adult_site(v)}
+
             # 更新 luna_data
             luna_data['api_site'] = new_api_site
             
@@ -246,15 +252,27 @@ def merge_custom_categories(all_categories):
     return merged
 
 # API 可用性检测
-async def check_api(session, api_url, name):
+async def check_api(session, api_url, name, site=None):
     try:
         async with session.get(api_url, timeout=ClientTimeout(total=5)) as response:
             if response.status != 200:
                 log_failed(api_url, f"Status {response.status}")
                 return False
+            # 成人 / AV 标记拦截（数据自带 flag 或名称含 🔞 / AV）
+            nm = name or ""
+            if "🔞" in nm:
+                log_failed(api_url, "Filtered by name: 🔞")
+                return False
+            if site and (site.get("is_adult") or site.get("isAdult")):
+                log_failed(api_url, "Filtered by is_adult flag")
+                return False
+            low = nm.lower()
+            if re.search(r"\bav\b", low) or low.startswith("av") or "av-" in low or "av资源" in low:
+                log_failed(api_url, "Filtered by name: av")
+                return False
             text = await response.text()
             for keyword in SENSITIVE_KEYWORDS:
-                if keyword.lower() in name.lower():
+                if keyword.lower() in nm.lower():
                     log_failed(api_url, f"Filtered by name: {keyword}")
                     return False
                 if keyword.lower() in text.lower():
@@ -270,31 +288,116 @@ def normalize_api_url(url):
     """
     规范化API URL，去掉特定参数部分
     规则：
-    1. 去掉查询参数（以?开头的部分）
-    2. 去掉/at/xxx部分
-    3. 去掉/from/xxx/at/xxx部分
+    1. 忽略协议（http/https 视为同一地址）
+    2. 去掉 www. 前缀
+    3. 去掉查询参数（以?开头的部分）
+    4. 去掉/from/xxx 与 /at/xxx 部分
+    5. 移除末尾斜杠
     """
+    if not url:
+        return ""
+    # 忽略协议
+    if url.lower().startswith("https://"):
+        url = url[8:]
+    elif url.lower().startswith("http://"):
+        url = url[7:]
+    # 去掉 www. 前缀
+    if url.lower().startswith("www."):
+        url = url[4:]
     # 去掉查询参数
     if '?' in url:
         url = url.split('?')[0]
-    
-    # 去掉/from/xxx/at/xxx部分
+    # 去掉/from/xxx 部分
     if '/from/' in url:
-        parts = url.split('/from/')
-        if len(parts) > 1:
-            base_part = parts[0]
-            url = base_part
-    
+        url = url.split('/from/')[0]
     # 去掉/at/xxx部分
     if '/at/' in url:
-        parts = url.split('/at/')
-        if len(parts) > 1:
-            url = parts[0]
-    
+        url = url.split('/at/')[0]
     # 移除末尾的斜杠
-    url = url.rstrip('/')
-    
+    url = url.rstrip('/').lower()
     return url
+
+
+# 提取资源核心名，用于同名去重（规则来自对仓库全部资源名的聚类分析）
+# 通用中文词：可出现在任意位置，去掉不影响品牌识别
+GEN_CJK = ["资源", "影视", "视频", "电影", "电视剧", "点播", "采集", "合集", "接口",
+           "在线", "免费", "最新", "高清", "直播", "仓库", "专用", "网络", "网", "站",
+           "短剧", "联盟", "备用", "新版"]
+# 通用拉丁词：作为整词或含 api 的域名痕迹需剔除（保留 CK/1080/souav/ok 等品牌拉丁）
+GENERIC_LATIN = {"tv", "new", "com", "www", "http", "https"}
+# 尾随语气词/填充噪声（如「资源阿」「啊啊」），真实品牌不会以这些结尾
+FILLER = "阿啊呀哈哦呢嘛哪呃嘞"
+_FW_MAP = str.maketrans(
+    "ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ０１２３４５６７８９",
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
+
+
+def clean_resource_name(name):
+    """提取资源核心名，用于同名去重。
+
+    关键结论：不能删除所有拉丁/数字（否则 CK/1080/souav 等品牌被清空而误并），
+    只能「弱化」装饰与通用词，保留中文品牌与拉丁/数字品牌。
+    """
+    if not name:
+        return ""
+    s = name.lower().translate(_FW_MAP)
+    # 仅保留中文 + 字母数字，删掉 emoji/符号/空格/括号等一切装饰
+    s = re.sub(r"[^\u4e00-\u9fffA-Za-z0-9]", "", s)
+    # 删除通用中文词（任意位置）
+    for g in GEN_CJK:
+        s = s.replace(g, "")
+    # 拆词：保留中文片段与品牌拉丁/数字，剔除域名痕迹
+    runs = re.findall(r"[a-z0-9]+|[一-鿿]+", s)
+    kept = []
+    for t in runs:
+        if re.search(r"[一-鿿]", t):
+            kept.append(t)
+            continue
+        low = t.lower()
+        if "api" in low:
+            continue
+        if low in GENERIC_LATIN:
+            continue
+        kept.append(t)
+    key = "".join(kept)
+    # 删除独立尾序号（版本号）：仅当尾随单数字且前接非数字时
+    key = re.sub(r"(?<=[一-鿿a-z])\d$", "", key)
+    # 删除尾随语气词填充噪声
+    key = re.sub(r"[" + FILLER + "]+$", "", key)
+    return key if key else name.lower()            # 兜底：避免清空后误并
+
+
+# 判断是否成人 / AV 资源（数据自带标记、🔞 图标、AV 关键词）
+def is_adult_site(site):
+    if site.get("is_adult") or site.get("isAdult"):
+        return True
+    name = site.get("name") or ""
+    if "🔞" in name:
+        return True
+    low = name.lower()
+    if re.search(r"\bav\b", low) or low.startswith("av") or "av-" in low or "av资源" in low:
+        return True
+    for kw in SENSITIVE_KEYWORDS:
+        if kw.lower() in low:
+            return True
+    return False
+
+
+# 综合评分（用于挑选最好的 N 个节点）：https + 直连(非代理) + 有 detail
+def evaluate_site(site):
+    api = site.get("api", "")
+    https = 1 if api.lower().startswith("https") else 0
+    proxied = 1 if ("pz." in api or "?url=" in api or "qzz.io" in api) else 0
+    detail = 1 if site.get("detail") else 0
+    return https * 5 + (1 - proxied) * 5 + detail * 3
+
+
+def write_file_base58(json_obj, txt_path):
+    raw = json.dumps(json_obj, ensure_ascii=False, indent=2)
+    encoded = base58.b58encode(raw.encode("utf-8")).decode("utf-8")
+    with open(txt_path, "w", encoding="utf-8") as f:
+        f.write(encoded)
+    return raw
 
 # 主流程
 async def main():
@@ -324,7 +427,7 @@ async def main():
 
     connector = aiohttp.TCPConnector(ssl=False)
     async with aiohttp.ClientSession(connector=connector) as session:
-        tasks = [check_api(session, api_url, site.get("name", "")) for api_url, site in all_sites.items()]
+        tasks = [check_api(session, api_url, site.get("name", ""), site) for api_url, site in all_sites.items()]
         results = await asyncio.gather(*tasks)
 
     new_api_site = {}
@@ -333,6 +436,16 @@ async def main():
         if results[i]:
             new_api_site[str(index)] = site
             index += 1
+
+    # 全量集合仅过滤成人/AV，保留多域名变体（不做同名去重，去重留到 Top20 挑选）
+    new_api_site = {k: v for k, v in new_api_site.items() if not is_adult_site(v)}
+    # 重新顺序编号
+    reindexed = {}
+    ri = 1
+    for s in new_api_site.values():
+        reindexed[str(ri)] = s
+        ri += 1
+    new_api_site = reindexed
 
     new_data = {
      "cache_time": 7200,
@@ -343,7 +456,33 @@ async def main():
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(new_data, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✅ 完成：保留 {len(new_api_site)} 个合法且可用 API")
+    # 综合评估最好的 20 个节点，单独输出 base58 文件
+    # 先按评分排序，再按资源核心名去重（同名只保留最优质的一个变体），取前 20
+    ranked = sorted(new_api_site.values(), key=evaluate_site, reverse=True)
+    top_api_site = {}
+    ti = 1
+    seen_names = set()
+    for s in ranked:
+        cn = clean_resource_name(s.get("name", ""))
+        key = cn if cn else ("_uniq", id(s))   # 无名条目各自独立，避免误并
+        if key in seen_names:
+            continue
+        seen_names.add(key)
+        top_api_site[str(ti)] = s
+        ti += 1
+        if len(top_api_site) >= 20:
+            break
+    top_data = {
+        "cache_time": 7200,
+        "api_site": top_api_site,
+        "custom_category": new_data.get("custom_category", [])
+    }
+    with open("output_top20.json", 'w', encoding='utf-8') as f:
+        json.dump(top_data, f, ensure_ascii=False, indent=2)
+    write_file_base58(top_data, "output_top20_base58.txt")
+
+    print(f"\n✅ 完成：保留 {len(new_api_site)} 个合法且可用 API（已去重 + 屏蔽成人/AV）")
+    print(f"🏆 综合评估最好的 {len(top_api_site)} 个节点已生成：output_top20.json / output_top20_base58.txt")
     print(f"📄 错误日志已保存到 {FAILED_LOG_FILE}")
     print(f"📄 GitHub 日志已保存到 {GITHUB_LOG_FILE}")
     print(f"💾 输出文件已保存为 {OUTPUT_FILE}")

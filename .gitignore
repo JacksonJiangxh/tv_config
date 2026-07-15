@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# 备份与调试产物（由脚本自动生成，非源码）
+*.bak
+debug_*.json
+debug_config.json
+
+# Node 依赖（CI 内联安装，不跟踪）
+node_modules/
