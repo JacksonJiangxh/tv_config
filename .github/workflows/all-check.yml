@@ -23,7 +23,7 @@ jobs:
           sudo apt-get install -y jq curl
           curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
           sudo apt-get install -y nodejs
-          npm install bs58 axios
+          npm install bs58@4.0.1 axios
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -69,7 +69,10 @@ jobs:
         run: |
           cat > encode.js <<'EOF'
           const fs = require('fs');
-          const bs58 = require('bs58');
+          const bs58Module = require('bs58');
+          const bs58 = (bs58Module && typeof bs58Module.encode === 'function')
+            ? bs58Module
+            : bs58Module.default;
 
           const files = [
             { input: 'input.json', output: 'input.txt' },
