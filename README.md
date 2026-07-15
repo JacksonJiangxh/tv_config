@@ -8,7 +8,7 @@
 ### 1. 核心脚本（可手动修改）
 | 文件 | 作用 |
 |------|------|
-| `main.py` | 主程序：`input.json` + `LunaTV-config.json` → 生成 `output.json` / `output_top20.*` / `LunaTV-config.json` 并做 Base58 编码 |
+| `main.py` | 主程序：`input.json` + `LunaTV-config.json` → 生成 `output.json` / `LunaTV-config.json` 并做 Base58 编码；Top20 由 `refine_output.py` 基于健康报告按「可搜索」过滤生成 |
 | `refine_output.py` | 精修脚本：从全量结果屏蔽成人/AV、保留变体并生成 Top20（手动重跑用） |
 | `check_api.js` | 每日检测各源可用性，输出 `report.md` |
 | `update_readme.js` | 把 `report.md` 的可用性表格同步进本 README |
@@ -50,7 +50,7 @@
 
 | 配置源 | 资源数量 | 成人内容 | 适用场景 |
 | - | - | - | - |
-| 🏆 Top20 (output_top20) | 20 个 | 已过滤 | 推荐：综合评分最优的 20 个节点（同名仅留最优变体） |
+| 🏆 Top20 (output_top20) | 20 个 | 已过滤 | 推荐：综合评分最优且「搜索功能=✅」的 20 个节点（同名仅留最优变体） |
 | 全量 (output) | 51 个 | 已过滤 | 完整功能、最大兼容性（保留多域名变体） |
 | 主配置 (LunaTV-config) | 57 个 | 已过滤 | App 默认配置：手工精选 + 全量变体 |
 

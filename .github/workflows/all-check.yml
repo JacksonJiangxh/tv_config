@@ -79,8 +79,7 @@ jobs:
             { input: 'jingjian.json', output: 'jingjian.txt' },
             { input: 'jin18.json', output: 'jin18.txt' },
             { input: 'LunaTV-config.json', output: 'LunaTV-config.txt' },
-            { input: 'output.json', output: 'output.txt' },
-            { input: 'output_top20.json', output: 'output_top20.txt' }
+            { input: 'output.json', output: 'output.txt' }
           ];
 
           files.forEach(file => {
@@ -100,6 +99,10 @@ jobs:
           echo "检查 API: $API_NAME"
           node check_api.js "$API_NAME"
 
+      # 6️⃣.5 基于刚生成的报告，按「可搜索」过滤重新生成 Top20
+      - name: Refine Top20 (searchable only)
+        run: python refine_output.py
+
       # 7️⃣ 更新 README 或报告
       - name: Update report
         run: node update_readme.js
@@ -118,7 +121,7 @@ jobs:
           # 添加所有生成文件（含 main.py 产出的全量 output 与 Top20 精修结果）
           git add LunaTV-config.json LunaTV-config.txt \
                   output.json output.txt output_base58.txt \
-                  output_top20.json output_top20.txt output_top20_base58.txt \
+                  output_top20.json output_top20_base58.txt \
                   jingjian.json jin18.json jingjian.txt jin18.txt \
                   report.md README.md input.json failed_apis.log github_sources.log
 

@@ -199,7 +199,10 @@ def evaluate(site, health):
 
 
 def pick_top20_distinct(sites, health, n=20):
-    """按综合评分排序后，按资源核心名去重（同名只保留最优质的一个变体），取前 n 个"""
+    """按综合评分排序后，按资源核心名去重（同名只保留最优质的一个变体），取前 n 个。
+    仅保留「可搜索」（报告搜索功能=✅）的资源；若 report.md 缺失/无健康数据，
+    则退化为不过滤，避免 Top20 为空。"""
+    has_health = bool(health)
     ranked = sorted(sites.values(), key=lambda s: evaluate(s, health), reverse=True)
     out = {}
     i = 1
@@ -210,10 +213,17 @@ def pick_top20_distinct(sites, health, n=20):
         if key in seen:
             continue
         seen.add(key)
+        # 仅在存在健康数据时才要求「可搜索」，确保 Top20 里搜索功能均为 ✅
+        if has_health:
+            api = s.get("api", "")
+            if health.get(normalize_api_url(api), {}).get("search") != "✅":
+                continue
         out[str(i)] = s
         i += 1
         if len(out) >= n:
             break
+    if len(out) < n:
+        print(f"⚠️ 可搜索（搜索功能=✅）的资源不足 {n} 个，当前仅 {len(out)} 个")
     return out
 
 

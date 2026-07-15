@@ -8,7 +8,6 @@ import time
 from datetime import datetime
 from aiohttp import ClientTimeout
 import os
-import base58
 import shutil
 # 配置项
 INPUT_FILE = 'input.json'
@@ -59,19 +58,6 @@ def replace_input_with_output():
         print("✅ input.json 已被 output.json 替换")
     except Exception as e:
         print(f"❌ 替换 input.json 失败: {e}")
-
-# ✅ 步骤 2：将 output.json 内容进行 Base58 编码并输出
-def encode_output_base58():
-    try:
-        with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
-            raw_data = f.read()
-        encoded = base58.b58encode(raw_data.encode('utf-8')).decode('utf-8')
-
-        with open('output_base58.txt', 'w', encoding='utf-8') as f:
-            f.write(encoded)
-        print("✅ output.json 已编码为 Base58 并保存为 output_base58.txt")
-    except Exception as e:
-        print(f"❌ Base58 编码失败: {e}")
 
 # 将 input.json 的 api_site 添加到 LunaTV-config.json 的分割标记之后
 def update_luna_tv_config():
@@ -392,13 +378,6 @@ def evaluate_site(site):
     return https * 5 + (1 - proxied) * 5 + detail * 3
 
 
-def write_file_base58(json_obj, txt_path):
-    raw = json.dumps(json_obj, ensure_ascii=False, indent=2)
-    encoded = base58.b58encode(raw.encode("utf-8")).decode("utf-8")
-    with open(txt_path, "w", encoding="utf-8") as f:
-        f.write(encoded)
-    return raw
-
 # 主流程
 async def main():
     all_sites = {}
@@ -456,38 +435,12 @@ async def main():
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(new_data, f, ensure_ascii=False, indent=2)
 
-    # 综合评估最好的 20 个节点，单独输出 base58 文件
-    # 先按评分排序，再按资源核心名去重（同名只保留最优质的一个变体），取前 20
-    ranked = sorted(new_api_site.values(), key=evaluate_site, reverse=True)
-    top_api_site = {}
-    ti = 1
-    seen_names = set()
-    for s in ranked:
-        cn = clean_resource_name(s.get("name", ""))
-        key = cn if cn else ("_uniq", id(s))   # 无名条目各自独立，避免误并
-        if key in seen_names:
-            continue
-        seen_names.add(key)
-        top_api_site[str(ti)] = s
-        ti += 1
-        if len(top_api_site) >= 20:
-            break
-    top_data = {
-        "cache_time": 7200,
-        "api_site": top_api_site,
-        "custom_category": new_data.get("custom_category", [])
-    }
-    with open("output_top20.json", 'w', encoding='utf-8') as f:
-        json.dump(top_data, f, ensure_ascii=False, indent=2)
-    write_file_base58(top_data, "output_top20_base58.txt")
-
     print(f"\n✅ 完成：保留 {len(new_api_site)} 个合法且可用 API（已去重 + 屏蔽成人/AV）")
-    print(f"🏆 综合评估最好的 {len(top_api_site)} 个节点已生成：output_top20.json / output_top20_base58.txt")
+    print("🏆 Top20 将在 API 可用性检测（check_api.js）生成报告后，由 refine_output.py 按「可搜索」过滤挑选")
     print(f"📄 错误日志已保存到 {FAILED_LOG_FILE}")
     print(f"📄 GitHub 日志已保存到 {GITHUB_LOG_FILE}")
     print(f"💾 输出文件已保存为 {OUTPUT_FILE}")
     replace_input_with_output()
-    encode_output_base58()
     update_luna_tv_config()
 # 运行
 if __name__ == '__main__':
