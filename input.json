@@ -274,6 +274,47 @@
     "52": {
       "api": "https://cj.lziapi.com/api.php/provide/vod",
       "name": "量子资源"
+    },
+    "53": {
+      "name": "🎬 无广1线 (非凡)",
+      "api": "https://yonghu.ffzyapi8.com/api.php/provide/vod/from/ffm3u8/at/json/",
+      "detail": "https://yonghu.ffzyapi8.com",
+      "is_adult": false
+    },
+    "54": {
+      "name": "🎬 ikunzy资源",
+      "api": "https://www.ikunzy.com/api.php/provide/vod/",
+      "detail": "https://www.ikunzy.com"
+    },
+    "55": {
+      "api": "https://api.maoyanapi.top/api.php/provide",
+      "name": "猫眼资源",
+      "detail": "https://www.maoyanzy.com"
+    },
+    "56": {
+      "api": "https://xingba222.com/api.php/provide",
+      "name": "杏吧资源",
+      "detail": "https://sex8zy8.com"
+    },
+    "57": {
+      "name": "雨哥哥资源",
+      "api": "http://cj.baozi66.top:66/api.php/provide/vod",
+      "detail": "http://cj.baozi66.top:66"
+    },
+    "58": {
+      "name": "神马资源",
+      "api": "https://img.smdyw.top/api.php/provide/vod",
+      "detail": "https://img.smdyw.top"
+    },
+    "59": {
+      "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/josn",
+      "name": "新浪",
+      "detail": "https://api.xinlangapi.com"
+    },
+    "60": {
+      "api": "https://api.yzzy-api.com/inc/api_mac10.php",
+      "name": "1080资源",
+      "detail": "https://1080zyk.com"
     }
   },
   "custom_category": [
@@ -416,6 +457,11 @@
       "name": "纪录片",
       "type": "tv",
       "query": "纪录片"
+    },
+    {
+      "name": "治愈",
+      "type": "movie",
+      "query": "治愈"
     }
   ]
 }

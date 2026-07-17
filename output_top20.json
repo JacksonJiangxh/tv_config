@@ -244,6 +244,11 @@
       "name": "纪录片",
       "type": "tv",
       "query": "纪录片"
+    },
+    {
+      "name": "治愈",
+      "type": "movie",
+      "query": "治愈"
     }
   ]
 }
