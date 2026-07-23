@@ -73,25 +73,26 @@
       "detail": "https://cj.lzcaiji.com"
     },
     "15": {
+      "name": "🎬 无广1线 (非凡)",
+      "api": "https://yonghu.ffzyapi8.com/api.php/provide/vod/from/ffm3u8/at/json/",
+      "detail": "https://yonghu.ffzyapi8.com",
+      "is_adult": false
+    },
+    "16": {
+      "name": "🎬 ikunzy资源",
+      "api": "https://www.ikunzy.com/api.php/provide/vod/",
+      "detail": "https://www.ikunzy.com"
+    },
+    "17": {
+      "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/josn",
+      "name": "新浪",
+      "detail": "https://api.xinlangapi.com"
+    },
+    "18": {
       "_comment": "无法搜索",
       "name": "🎬优质资源",
       "api": "https://api.yzzy-api.com/inc/apijson.php",
       "detail": "https://1080zyk4.com"
-    },
-    "16": {
-      "name": "TV-1080资源库",
-      "api": "https://api.1080zyku.com/inc/api_mac10.php",
-      "detail": "https://api.1080zyku.com"
-    },
-    "17": {
-      "name": "TV-神马云",
-      "api": "https://api.1080zyku.com/inc/apijson.php",
-      "detail": "https://api.1080zyku.com"
-    },
-    "18": {
-      "name": "🎬最大资源",
-      "api": "https://api.zuidapi.com/api.php/provide/vod",
-      "detail": "https://zuida.xyz"
     },
     "19": {
       "name": "🎬无尽资源",
@@ -99,9 +100,9 @@
       "detail": "https://wujinzy.com"
     },
     "20": {
-      "name": "🎬新浪资源",
-      "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
-      "detail": "https://xinlangapi.com"
+      "api": "https://api.yzzy-api.com/inc/api_mac10.php",
+      "name": "1080资源",
+      "detail": "https://1080zyk.com"
     }
   },
   "custom_category": [
