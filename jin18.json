@@ -300,20 +300,15 @@
       "name": "快车资源阿"
     },
     "67": {
-      "name": "🎬豆瓣资源",
-      "api": "https://caiji.dbzy5.com/api.php/provide/vod",
-      "detail": "https://dbzy.tv"
-    },
-    "68": {
       "api": "https://dbzy.tv/api.php/provide/vod",
       "name": "豆瓣资源"
     },
-    "69": {
+    "68": {
       "api": "https://taopianapi.com/cjapi/mc10/vod/json.html",
       "name": "TV-淘片资源",
       "detail": "https://www.taopianzy.com/help.html"
     },
-    "70": {
+    "69": {
       "name": "大众资源采集接口",
       "api": "https://cdn.dzzyapi.com/api.php/provide/vod"
     }
