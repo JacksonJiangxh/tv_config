@@ -84,25 +84,24 @@
       "detail": "https://www.hongniuzy.com"
     },
     "17": {
-      "name": "🎬如意资源",
-      "api": "https://cj.rycjapi.com/api.php/provide/vod",
-      "detail": "https://www.ryzyw.com"
-    },
-    "18": {
       "name": "🎬豪华资源",
       "api": "https://hhzyapi.com/api.php/provide/vod",
       "detail": "https://www.haohuazy.com"
     },
-    "19": {
+    "18": {
       "name": "TV-牛牛点播",
       "api": "https://www.hongniuzy3.com/api.php/provide/vod",
       "detail": "https://www.hongniuzy.com"
     },
+    "19": {
+      "name": "🎬U酷影视",
+      "api": "https://api.ukuapi88.com/api.php/provide/vod",
+      "detail": "https://www.ukuzy.com"
+    },
     "20": {
-      "api": "https://yhzy.cc/api.php/provide/vod",
-      "name": "🔅樱花资源ᴴ",
-      "is_adult": false,
-      "detail": "https://yhzy.cc"
+      "name": "TV-U酷资源",
+      "api": "https://api.ukuapi.com/api.php/provide/vod",
+      "detail": "https://api.ukuapi.com"
     }
   },
   "custom_category": [
