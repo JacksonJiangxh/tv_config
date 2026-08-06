@@ -323,6 +323,12 @@
     "65": {
       "name": "无水印资源网采集接口",
       "api": "https://api.wsyzy.net/api.php/provide/vod"
+    },
+    "66": {
+      "_comment": " 403 Forbidden ",
+      "name": "🎬樱花资源",
+      "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
+      "detail": "https://yhzy.cc"
     }
   },
   "custom_category": [
