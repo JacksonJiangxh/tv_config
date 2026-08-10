@@ -244,39 +244,35 @@
       "detail": "https://www.maoyanzy.com"
     },
     "56": {
-      "name": "🎬U酷影视",
-      "api": "https://api.ukuapi88.com/api.php/provide/vod",
-      "detail": "https://www.ukuzy.com"
-    },
-    "57": {
-      "name": "TV-U酷资源",
-      "api": "https://api.ukuapi.com/api.php/provide/vod",
-      "detail": "https://api.ukuapi.com"
-    },
-    "58": {
       "name": "🎬如意资源",
       "api": "https://cj.rycjapi.com/api.php/provide/vod",
       "detail": "https://www.ryzyw.com"
     },
-    "59": {
+    "57": {
       "name": "🎬百度云zy",
       "api": "https://pz.v88.qzz.io/?url=https://api.apibdzy.com/api.php/provide/vod",
       "detail": "https://bdzy1.com"
     },
-    "60": {
+    "58": {
       "api": "https://api.yzzy-api.com/inc/ldg_api_all.php/provide/vod",
       "name": "优质资源库",
       "detail": "",
       "is_adult": false
     },
-    "61": {
+    "59": {
       "name": "无水印资源网采集接口",
       "api": "https://api.wsyzy.net/api.php/provide/vod"
     },
-    "63": {
+    "61": {
       "name": "🎬-爱奇艺-",
       "api": "https://iqiyizyapi.com/api.php/provide/vod",
       "detail": "https://iqiyizyapi.com"
+    },
+    "62": {
+      "api": "https://dbzy.com/api.php/provide/vod",
+      "name": "豆瓣资源3",
+      "detail": "",
+      "is_adult": false
     }
   }
 }
