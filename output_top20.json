@@ -57,36 +57,31 @@
       "detail": "https://www.hongniuzy.com"
     },
     "12": {
-      "name": "🎬U酷影视",
-      "api": "https://api.ukuapi88.com/api.php/provide/vod",
-      "detail": "https://www.ukuzy.com"
-    },
-    "13": {
       "name": "🎬-爱奇艺-",
       "api": "https://iqiyizyapi.com/api.php/provide/vod",
       "detail": "https://iqiyizyapi.com"
     },
-    "14": {
+    "13": {
       "name": "🎬最大资源",
       "api": "https://api.zuidapi.com/api.php/provide/vod",
       "detail": "https://zuida.xyz"
     },
-    "15": {
+    "14": {
       "name": "🎬猫眼资源",
       "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "detail": "https://www.maoyanzy.com"
     },
-    "16": {
+    "15": {
       "api": "http://ffzy5.tv/api.php/provide/vod",
       "name": "非凡影视",
       "detail": "http://ffzy5.tv"
     },
-    "17": {
+    "16": {
       "name": "🎬百度云zy",
       "api": "https://pz.v88.qzz.io/?url=https://api.apibdzy.com/api.php/provide/vod",
       "detail": "https://bdzy1.com"
     },
-    "18": {
+    "17": {
       "_comment": "污染搜索结果",
       "name": "🎬虎牙资源",
       "api": "https://www.huyaapi.com/api.php/provide/vod",
@@ -231,56 +226,6 @@
     },
     {
       "name": "纪录片",
-      "type": "tv",
-      "query": "纪录片"
-    },
-    {
-      "name": "犯罪",
-      "type": "movie",
-      "query": "犯罪"
-    },
-    {
-      "name": "战争",
-      "type": "movie",
-      "query": "战争"
-    },
-    {
-      "name": "西部",
-      "type": "movie",
-      "query": "西部"
-    },
-    {
-      "name": "治愈",
-      "type": "movie",
-      "query": "治愈"
-    },
-    {
-      "name": "动漫",
-      "type": "tv",
-      "query": "日本动画"
-    },
-    {
-      "name": "奇幻",
-      "type": "movie",
-      "query": "奇幻"
-    },
-    {
-      "name": "惊悚",
-      "type": "movie",
-      "query": "惊悚"
-    },
-    {
-      "name": "灾难",
-      "type": "movie",
-      "query": "灾难"
-    },
-    {
-      "name": "国产",
-      "type": "tv",
-      "query": "国产剧"
-    },
-    {
-      "name": "纪录",
       "type": "tv",
       "query": "纪录片"
     }

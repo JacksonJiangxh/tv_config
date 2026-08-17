@@ -221,46 +221,36 @@
       "is_adult": false
     },
     "45": {
-      "name": "🎬U酷影视",
-      "api": "https://api.ukuapi88.com/api.php/provide/vod",
-      "detail": "https://www.ukuzy.com"
-    },
-    "46": {
-      "name": "TV-U酷资源",
-      "api": "https://api.ukuapi.com/api.php/provide/vod",
-      "detail": "https://api.ukuapi.com"
-    },
-    "47": {
       "name": "🎬豆瓣资源",
       "api": "https://caiji.dbzy5.com/api.php/provide/vod",
       "detail": "https://dbzy.tv"
     },
-    "48": {
+    "46": {
       "name": "🎬量子资源",
       "api": "https://cj.lzcaiji.com/api.php/provide/vod",
       "detail": "https://cj.lzcaiji.com"
     },
-    "49": {
+    "47": {
       "_comment": "备用",
       "name": "🎬量子影视",
       "api": "https://cj.lziapi.com/api.php/provide/vod",
       "detail": "https://lzizy.net"
     },
-    "50": {
+    "48": {
       "api": "https://dbzy.tv/api.php/provide/vod",
       "name": "豆瓣资源"
     },
-    "51": {
+    "49": {
       "name": "🎬金鹰点播",
       "api": "https://jinyingzy.com/api.php/provide/vod",
       "detail": "https://jinyingzy.com"
     },
-    "52": {
+    "50": {
       "api": "https://taopianapi.com/cjapi/mc10/vod/json.html",
       "name": "TV-淘片资源",
       "detail": "https://www.taopianzy.com/help.html"
     },
-    "53": {
+    "51": {
       "name": "🎬-爱奇艺-",
       "api": "https://iqiyizyapi.com/api.php/provide/vod",
       "detail": "https://iqiyizyapi.com"
@@ -404,56 +394,6 @@
     },
     {
       "name": "纪录片",
-      "type": "tv",
-      "query": "纪录片"
-    },
-    {
-      "name": "犯罪",
-      "type": "movie",
-      "query": "犯罪"
-    },
-    {
-      "name": "战争",
-      "type": "movie",
-      "query": "战争"
-    },
-    {
-      "name": "西部",
-      "type": "movie",
-      "query": "西部"
-    },
-    {
-      "name": "治愈",
-      "type": "movie",
-      "query": "治愈"
-    },
-    {
-      "name": "动漫",
-      "type": "tv",
-      "query": "日本动画"
-    },
-    {
-      "name": "奇幻",
-      "type": "movie",
-      "query": "奇幻"
-    },
-    {
-      "name": "惊悚",
-      "type": "movie",
-      "query": "惊悚"
-    },
-    {
-      "name": "灾难",
-      "type": "movie",
-      "query": "灾难"
-    },
-    {
-      "name": "国产",
-      "type": "tv",
-      "query": "国产剧"
-    },
-    {
-      "name": "纪录",
       "type": "tv",
       "query": "纪录片"
     }
