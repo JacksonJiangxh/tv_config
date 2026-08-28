@@ -263,6 +263,11 @@
       "name": "猫眼资源",
       "detail": "",
       "is_adult": false
+    },
+    "61": {
+      "name": "🎬量子资源",
+      "api": "https://cj.lzcaiji.com/api.php/provide/vod",
+      "detail": "https://cj.lzcaiji.com"
     }
   }
 }
