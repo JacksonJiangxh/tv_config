@@ -175,6 +175,84 @@
       "name": "🎬无尽资源",
       "api": "https://api.wujinapi.net/api.php/provide/vod",
       "detail": "https://api.wujinapi.net"
+    },
+    "41": {
+      "name": "🎬最大资源",
+      "api": "https://api.zuidapi.com/api.php/provide/vod",
+      "detail": "https://zuida.xyz"
+    },
+    "42": {
+      "name": "🎬新浪资源",
+      "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
+      "detail": "https://xinlangapi.com"
+    },
+    "43": {
+      "name": "🎬速播资源",
+      "api": "https://subocaiji.com/api.php/provide/vod",
+      "detail": "https://www.subozy.com"
+    },
+    "44": {
+      "name": "🎬金鹰点播",
+      "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
+      "detail": "https://jinyingzy.com"
+    },
+    "45": {
+      "name": "🎬红牛资源",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "detail": "https://www.hongniuzy.com"
+    },
+    "46": {
+      "name": "🎬豪华资源",
+      "api": "https://hhzyapi.com/api.php/provide/vod",
+      "detail": "https://www.haohuazy.com"
+    },
+    "47": {
+      "name": "🎬百度云zy",
+      "api": "https://pz.v88.qzz.io/?url=https://api.apibdzy.com/api.php/provide/vod",
+      "detail": "https://bdzy1.com"
+    },
+    "53": {
+      "api": "https://tyyszy.com/api.php/provide/vod",
+      "name": "天涯资源"
+    },
+    "54": {
+      "api": "http://ffzy5.tv/api.php/provide/vod",
+      "name": "非凡影视",
+      "detail": "http://ffzy5.tv"
+    },
+    "55": {
+      "api": "https://subocj.com/api.php/provide/vod",
+      "name": "速播资源"
+    },
+    "56": {
+      "name": "🎬金鹰点播",
+      "api": "https://jinyingzy.com/api.php/provide/vod",
+      "detail": "https://jinyingzy.com"
+    },
+    "57": {
+      "name": "TV-金鹰资源",
+      "api": "https://jyzyapi.com/api.php/provide/vod",
+      "detail": "https://jyzyapi.com"
+    },
+    "58": {
+      "name": "TV-闪电资源",
+      "api": "https://sdzyapi.com/api.php/provide/vod",
+      "detail": "http://sdzyapi.com"
+    },
+    "59": {
+      "name": "TV-牛牛点播",
+      "api": "https://api.niuniuzy.me/api.php/provide/vod",
+      "detail": "https://api.niuniuzy.me"
+    },
+    "60": {
+      "name": "TV-牛牛点播",
+      "api": "https://www.hongniuzy3.com/api.php/provide/vod",
+      "detail": "https://www.hongniuzy.com"
+    },
+    "61": {
+      "api": "https://api.okzyw.net/api.php/provide/vod",
+      "name": "TV-OK资源",
+      "detail": "https://okzyw.cc/index.php/label/help.html"
     }
   }
 }
