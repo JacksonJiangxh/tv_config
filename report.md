@@ -1,12 +1,12 @@
 # 源接口健康检测报告
 
-最近更新时间：2026-09-04 10:39 CST
+最近更新时间：2026-09-05 10:40 CST
 
 **总源数:** 60 | **检测关键词:** 逐玉
 
 | 状态 | 资源名称 | 地址 | API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
 |------|---------|-----|-----|---------|---------:|--------:|-------:|--------------|
-| 🚨 | 雨哥哥资源 | [Link](http://cj.baozi66.top:66) | [Link](http://cj.baozi66.top:66/api.php/provide/vod) | ❌ | 8 | 22 | 26.7% | ❌❌❌❌❌❌❌ |
+| 🚨 | 雨哥哥资源 | [Link](http://cj.baozi66.top:66) | [Link](http://cj.baozi66.top:66/api.php/provide/vod) | ❌ | 7 | 23 | 23.3% | ❌❌❌❌❌❌❌ |
 | ✅ | 樱花资源 | - | [Link](https://m3u8.apiyhzy.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
 | ✅ | 无尽资源 | [Link](https://wujinzy.net) | [Link](https://api.wujinapi.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
 | ✅ | 快车资源阿 | [Link](https://kuaichezy.com) | [Link](https://caiji.kuaichezy.org/api.php/provide) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
@@ -40,7 +40,7 @@
 | ✅ | 无尽资源 | [Link](https://api.wujinapi.cc) | [Link](https://api.wujinapi.cc/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
 | ✅ | 丫丫点播 | [Link](https://cj.yayazy.net) | [Link](https://cj.yayazy.net/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
 | ✅ | 无尽资源 | [Link](https://api.wujinapi.com) | [Link](https://api.wujinapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 无尽资源 | [Link](https://api.wujinapi.net) | [Link](https://api.wujinapi.net/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅❌✅✅✅✅✅ |
+| ✅ | 无尽资源 | [Link](https://api.wujinapi.net) | [Link](https://api.wujinapi.net/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ❌✅✅✅✅✅✅ |
 | ✅ | 最大点播 | [Link](http://zuidazy.me) | [Link](http://zuidazy.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
 | ✅ | 牛牛点播 | [Link](https://api.niuniuzy.me) | [Link](https://api.niuniuzy.me/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
 | ✅ | 虎牙资源 | [Link](https://www.huyaapi.com) | [Link](https://www.huyaapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
@@ -72,432 +72,6 @@
 
 ```json
 [
-  {
-    "date": "2026-08-05",
-    "keyword": "逐玉",
-    "results": [
-      {
-        "name": "樱花资源",
-        "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "无尽资源",
-        "api": "https://api.wujinapi.me/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "快车资源阿",
-        "api": "https://caiji.kuaichezy.org/api.php/provide",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "TV-麒麟资源",
-        "api": "https://www.qilinzyz.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "建安资源站",
-        "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod/",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "不匹配"
-      },
-      {
-        "name": "🎬360 资源",
-        "api": "https://360zyzz.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "天涯资源",
-        "api": "https://tyyszy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "天涯影视资源",
-        "api": "https://tyyszyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "无水印资源网采集接口",
-        "api": "https://api.wsyzy.net/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "索尼资源",
-        "api": "https://suoniapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬魔都动漫",
-        "api": "https://caiji.moduapi.cc/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "非凡影视",
-        "api": "http://ffzy5.tv/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬魔都资源",
-        "api": "https://www.mdzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬-爱奇艺-",
-        "api": "https://iqiyizyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬iKun资源",
-        "api": "https://ikunzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬猫眼资源",
-        "api": "https://api.maoyanapi.top/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬暴风资源",
-        "api": "https://bfzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬最大资源",
-        "api": "https://api.zuidapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬新浪资源",
-        "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬速播资源",
-        "api": "https://subocaiji.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬金鹰点播",
-        "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬U酷影视",
-        "api": "https://api.ukuapi88.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬红牛资源",
-        "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬如意资源",
-        "api": "https://cj.rycjapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬豪华资源",
-        "api": "https://hhzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬百度云zy",
-        "api": "https://pz.v88.qzz.io/?url=https://api.apibdzy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "360资源",
-        "api": "https://360zy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "豆瓣资源",
-        "api": "https://dbzy.tv/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "无结果"
-      },
-      {
-        "name": "1080资源",
-        "api": "https://api.1080zyku.com/inc/api_mac10.php",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "U酷资源",
-        "api": "https://api.ukuapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "无尽资源",
-        "api": "https://api.wujinapi.cc/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "丫丫点播",
-        "api": "https://cj.yayazy.net/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "无尽资源",
-        "api": "https://api.wujinapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "无尽资源",
-        "api": "https://api.wujinapi.net/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "最大点播",
-        "api": "http://zuidazy.me/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "牛牛点播",
-        "api": "https://api.niuniuzy.me/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "虎牙资源",
-        "api": "https://www.huyaapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "金鹰资源",
-        "api": "https://jyzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "闪电资源",
-        "api": "https://sdzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "红牛资源",
-        "api": "https://www.hongniuzy3.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "闪电资源",
-        "api": "https://xsd.sdzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "优质资源",
-        "api": "https://api.yzzy-api.com/inc/apijson.php",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "TV-神马云",
-        "api": "https://api.1080zyku.com/inc/apijson.php/",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "辣椒资源黄黄",
-        "api": "https://apilj.com/api.php/provide",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "优质资源库1080zyk6.com高清",
-        "api": "https://api.yzzy-api.com/inc/ldg_api_all.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "快车资源阿",
-        "api": "https://caiji.kuaichezy.org/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "豆瓣资源",
-        "api": "https://caiji.dbzy5.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "无结果"
-      },
-      {
-        "name": "🔅飞速资源ᴴ",
-        "api": "http://fszy1.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🔅樱花资源ᴴ",
-        "api": "https://yhzy.cc/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "U酷资源",
-        "api": "https://api.ukuapi88.com/api.php/provide/art/?ac=list",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "不匹配"
-      },
-      {
-        "name": "🎬量子资源",
-        "api": "https://cj.lzcaiji.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "量子资源",
-        "api": "https://cj.lziapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬 无广1线 (非凡)",
-        "api": "https://yonghu.ffzyapi8.com/api.php/provide/vod/from/ffm3u8/at/json/",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬 ikunzy资源",
-        "api": "https://www.ikunzy.com/api.php/provide/vod/",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "猫眼资源",
-        "api": "https://api.maoyanapi.top/api.php/provide",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "杏吧资源",
-        "api": "https://xingba222.com/api.php/provide",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "雨哥哥资源",
-        "api": "http://cj.baozi66.top:66/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "神马资源",
-        "api": "https://img.smdyw.top/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "新浪",
-        "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/josn",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "1080资源",
-        "api": "https://api.yzzy-api.com/inc/api_mac10.php",
-        "disabled": false,
-        "success": true,
-        "searchStatus": "✅"
-      }
-    ]
-  },
   {
     "date": "2026-08-06",
     "keyword": "逐玉",
@@ -12428,6 +12002,432 @@
   },
   {
     "date": "2026-09-04",
+    "keyword": "逐玉",
+    "results": [
+      {
+        "name": "樱花资源",
+        "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "无尽资源",
+        "api": "https://api.wujinapi.me/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "快车资源阿",
+        "api": "https://caiji.kuaichezy.org/api.php/provide",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "TV-麒麟资源",
+        "api": "https://www.qilinzyz.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "建安资源站",
+        "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod/",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "不匹配"
+      },
+      {
+        "name": "🎬360 资源",
+        "api": "https://360zyzz.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "天涯资源",
+        "api": "https://tyyszy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "天涯影视资源",
+        "api": "https://tyyszyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "无水印资源网采集接口",
+        "api": "https://api.wsyzy.net/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "索尼资源",
+        "api": "https://suoniapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬魔都动漫",
+        "api": "https://caiji.moduapi.cc/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "非凡影视",
+        "api": "http://ffzy5.tv/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬魔都资源",
+        "api": "https://www.mdzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬-爱奇艺-",
+        "api": "https://iqiyizyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬iKun资源",
+        "api": "https://ikunzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬猫眼资源",
+        "api": "https://api.maoyanapi.top/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬暴风资源",
+        "api": "https://bfzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬最大资源",
+        "api": "https://api.zuidapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬新浪资源",
+        "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬速播资源",
+        "api": "https://subocaiji.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬金鹰点播",
+        "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬U酷影视",
+        "api": "https://api.ukuapi88.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬红牛资源",
+        "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬如意资源",
+        "api": "https://cj.rycjapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬豪华资源",
+        "api": "https://hhzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬百度云zy",
+        "api": "https://pz.v88.qzz.io/?url=https://api.apibdzy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "360资源",
+        "api": "https://360zy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "豆瓣资源",
+        "api": "https://dbzy.tv/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "无结果"
+      },
+      {
+        "name": "1080资源",
+        "api": "https://api.1080zyku.com/inc/api_mac10.php",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "U酷资源",
+        "api": "https://api.ukuapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "无尽资源",
+        "api": "https://api.wujinapi.cc/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "丫丫点播",
+        "api": "https://cj.yayazy.net/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "无尽资源",
+        "api": "https://api.wujinapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "无尽资源",
+        "api": "https://api.wujinapi.net/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "最大点播",
+        "api": "http://zuidazy.me/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "牛牛点播",
+        "api": "https://api.niuniuzy.me/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "虎牙资源",
+        "api": "https://www.huyaapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "金鹰资源",
+        "api": "https://jyzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "闪电资源",
+        "api": "https://sdzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "红牛资源",
+        "api": "https://www.hongniuzy3.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "闪电资源",
+        "api": "https://xsd.sdzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "优质资源",
+        "api": "https://api.yzzy-api.com/inc/apijson.php",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "TV-神马云",
+        "api": "https://api.1080zyku.com/inc/apijson.php/",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "辣椒资源黄黄",
+        "api": "https://apilj.com/api.php/provide",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "优质资源库1080zyk6.com高清",
+        "api": "https://api.yzzy-api.com/inc/ldg_api_all.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "快车资源阿",
+        "api": "https://caiji.kuaichezy.org/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "豆瓣资源",
+        "api": "https://caiji.dbzy5.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "无结果"
+      },
+      {
+        "name": "🔅飞速资源ᴴ",
+        "api": "http://fszy1.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🔅樱花资源ᴴ",
+        "api": "https://yhzy.cc/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "U酷资源",
+        "api": "https://api.ukuapi88.com/api.php/provide/art/?ac=list",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "不匹配"
+      },
+      {
+        "name": "🎬量子资源",
+        "api": "https://cj.lzcaiji.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "量子资源",
+        "api": "https://cj.lziapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬 无广1线 (非凡)",
+        "api": "https://yonghu.ffzyapi8.com/api.php/provide/vod/from/ffm3u8/at/json/",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬 ikunzy资源",
+        "api": "https://www.ikunzy.com/api.php/provide/vod/",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "猫眼资源",
+        "api": "https://api.maoyanapi.top/api.php/provide",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "杏吧资源",
+        "api": "https://xingba222.com/api.php/provide",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "雨哥哥资源",
+        "api": "http://cj.baozi66.top:66/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "神马资源",
+        "api": "https://img.smdyw.top/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "新浪",
+        "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/josn",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "1080资源",
+        "api": "https://api.yzzy-api.com/inc/api_mac10.php",
+        "disabled": false,
+        "success": true,
+        "searchStatus": "✅"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-05",
     "keyword": "逐玉",
     "results": [
       {
