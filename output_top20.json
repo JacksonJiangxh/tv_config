@@ -63,45 +63,44 @@
       "detail": "https://www.hongniuzy.com"
     },
     "13": {
+      "name": "🎬暴风资源",
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "detail": "https://bfzy.tv"
+    },
+    "14": {
       "name": "TV-U酷资源",
       "api": "https://api.ukuapi.com/api.php/provide/vod",
       "detail": "https://api.ukuapi.com"
     },
-    "14": {
+    "15": {
       "name": "🎬iKun资源",
       "api": "https://ikunzyapi.com/api.php/provide/vod",
       "detail": "https://ikunzy.com"
     },
-    "15": {
+    "16": {
       "name": "🎬-爱奇艺-",
       "api": "https://iqiyizyapi.com/api.php/provide/vod",
       "detail": "https://iqiyizyapi.com"
     },
-    "16": {
+    "17": {
       "name": "🎬百度云zy",
       "api": "https://pz.v88.qzz.io/?url=https://api.apibdzy.com/api.php/provide/vod",
       "detail": "https://bdzy1.com"
     },
-    "17": {
+    "18": {
       "api": "http://ffzy5.tv/api.php/provide/vod",
       "name": "非凡影视",
       "detail": "http://ffzy5.tv"
     },
-    "18": {
+    "19": {
       "name": "🎬魔都资源",
       "api": "https://www.mdzyapi.com/api.php/provide/vod",
       "detail": "https://www.moduzy.net"
     },
-    "19": {
+    "20": {
       "name": "🎬魔都动漫",
       "api": "https://caiji.moduapi.cc/api.php/provide/vod",
       "detail": "https://caiji.moduapi.cc"
-    },
-    "20": {
-      "_comment": "无法搜索",
-      "name": "🎬优质资源",
-      "api": "https://api.yzzy-api.com/inc/apijson.php",
-      "detail": "https://1080zyk4.com"
     }
   },
   "custom_category": [

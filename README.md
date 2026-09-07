@@ -51,7 +51,7 @@
 | 配置源 | 资源数量 | 成人内容 | 适用场景 |
 | - | - | - | - |
 | 🏆 Top20 (output_top20) | 20 个 | 已过滤 | 推荐：综合评分最优的 20 个节点（同名仅留最优变体） |
-| 全量 (output) | 56 个 | 已过滤 | 完整功能、最大兼容性（保留多域名变体） |
+| 全量 (output) | 61 个 | 已过滤 | 完整功能、最大兼容性（保留多域名变体） |
 | 主配置 (LunaTV-config) | 60 个 | 已过滤 | App 默认配置：手工精选 + 全量变体 |
 
 <!-- CONFIG_COMPARE_END -->
@@ -65,7 +65,7 @@
 
 # API 健康报告（每日自动检测API状态）
 
-## API 状态（最近更新：2026-09-06 10:38 CST）
+## API 状态（最近更新：2026-09-07 10:35 CST）
 
 - 总 API 数量：60
 - 成功 API 数量：59
@@ -140,7 +140,7 @@
 | ✅ | 🎬 ikunzy资源 | [Link](https://www.ikunzy.com) | [Link](https://www.ikunzy.com/api.php/provide/vod/) | ✅ | 25 | 5 | 83.3% | ✅✅✅✅✅✅✅ |
 | ✅ | 🎬 无广1线 (非凡) | [Link](https://yonghu.ffzyapi8.com) | [Link](https://yonghu.ffzyapi8.com/api.php/provide/vod/from/ffm3u8/at/json/) | ✅ | 25 | 5 | 83.3% | ✅✅✅✅✅✅✅ |
 | ✅ | 豆瓣资源 | [Link](https://dbzy.tv) | [Link](https://caiji.dbzy5.com/api.php/provide/vod) | 无结果 | 24 | 6 | 80.0% | ✅✅✅✅✅✅✅ |
-| 🚨 | 雨哥哥资源 | [Link](http://cj.baozi66.top:66) | [Link](http://cj.baozi66.top:66/api.php/provide/vod) | ❌ | 6 | 24 | 20.0% | ❌❌❌❌❌❌❌ |
+| 🚨 | 雨哥哥资源 | [Link](http://cj.baozi66.top:66) | [Link](http://cj.baozi66.top:66/api.php/provide/vod) | ❌ | 5 | 25 | 16.7% | ❌❌❌❌❌❌❌ |
 <!-- API_TABLE_END -->
 
 ***

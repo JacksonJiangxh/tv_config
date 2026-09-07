@@ -287,6 +287,33 @@
       "name": "🎬-爱奇艺-",
       "api": "https://iqiyizyapi.com/api.php/provide/vod",
       "detail": "https://iqiyizyapi.com"
+    },
+    "57": {
+      "name": "🎬量子资源",
+      "api": "https://cj.lzcaiji.com/api.php/provide/vod",
+      "detail": "https://cj.lzcaiji.com"
+    },
+    "58": {
+      "name": "🎬暴风资源",
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "detail": "https://bfzy.tv"
+    },
+    "59": {
+      "name": "🎬如意资源",
+      "api": "https://cj.rycjapi.com/api.php/provide/vod",
+      "detail": "https://www.ryzyw.com"
+    },
+    "60": {
+      "_comment": "备用",
+      "name": "🎬量子影视",
+      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "detail": "https://lzizy.net"
+    },
+    "61": {
+      "api": "https://api.wujinapi.net/api.php/provide/vod",
+      "name": "无尽资源3",
+      "detail": "",
+      "is_adult": false
     }
   },
   "custom_category": [
