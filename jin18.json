@@ -219,20 +219,20 @@
       "detail": "https://cj.lzcaiji.com"
     },
     "53": {
-      "name": "🎬暴风资源",
-      "api": "https://bfzyapi.com/api.php/provide/vod",
-      "detail": "https://bfzy.tv"
-    },
-    "54": {
       "name": "🎬如意资源",
       "api": "https://cj.rycjapi.com/api.php/provide/vod",
       "detail": "https://www.ryzyw.com"
     },
-    "56": {
+    "55": {
       "api": "https://api.wujinapi.net/api.php/provide/vod",
       "name": "无尽资源3",
       "detail": "",
       "is_adult": false
+    },
+    "57": {
+      "api": "https://taopianapi.com/cjapi/mc10/vod/json.html",
+      "name": "TV-淘片资源",
+      "detail": "https://www.taopianzy.com/help.html"
     }
   }
 }

@@ -65,12 +65,12 @@
 
 # API 健康报告（每日自动检测API状态）
 
-## API 状态（最近更新：2026-09-12 10:53 CST）
+## API 状态（最近更新：2026-09-13 10:52 CST）
 
 - 总 API 数量：60
 - 成功 API 数量：58
 - 失败 API 数量：2
-- 平均可用率：93.1%
+- 平均可用率：93.0%
 - 完美可用率（100%）：32 个
 - 高可用率（80%-99%）：26 个
 - 中等可用率（50%-79%）：1 个
@@ -139,8 +139,8 @@
 | ✅ | 量子资源 | - | [Link](https://cj.lziapi.com/api.php/provide/vod) | ✅ | 26 | 4 | 86.7% | ✅✅✅✅✅✅✅ |
 | ✅ | 🎬 ikunzy资源 | [Link](https://www.ikunzy.com) | [Link](https://www.ikunzy.com/api.php/provide/vod/) | ✅ | 25 | 5 | 83.3% | ✅✅✅✅✅✅✅ |
 | ✅ | 豆瓣资源 | [Link](https://dbzy.tv) | [Link](https://caiji.dbzy5.com/api.php/provide/vod) | 无结果 | 24 | 6 | 80.0% | ✅✅✅✅✅✅✅ |
-| 🚨 | 杏吧资源 | [Link](https://sex8zy8.com) | [Link](https://xingba222.com/api.php/provide) | ❌ | 22 | 8 | 73.3% | ✅✅✅❌❌❌❌ |
-| 🚨 | 雨哥哥资源 | [Link](http://cj.baozi66.top:66) | [Link](http://cj.baozi66.top:66/api.php/provide/vod) | ❌ | 1 | 29 | 3.3% | ❌❌❌❌❌❌❌ |
+| 🚨 | 杏吧资源 | [Link](https://sex8zy8.com) | [Link](https://xingba222.com/api.php/provide) | ❌ | 21 | 9 | 70.0% | ✅✅❌❌❌❌❌ |
+| 🚨 | 雨哥哥资源 | [Link](http://cj.baozi66.top:66) | [Link](http://cj.baozi66.top:66/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ |
 <!-- API_TABLE_END -->
 
 ***
