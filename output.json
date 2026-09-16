@@ -256,28 +256,31 @@
       "detail": "https://wujinzy.com"
     },
     "51": {
-      "_comment": "备用",
-      "name": "🎬无尽影视",
-      "api": "https://api.wujinapi.com/api.php/provide/vod",
-      "detail": "https://wujinzy.com"
-    },
-    "52": {
-      "api": "https://api.wujinapi.cc/api.php/provide/vod",
-      "name": "无尽资源4",
-      "detail": "",
-      "is_adult": false
-    },
-    "53": {
-      "api": "https://api.wujinapi.net/api.php/provide/vod",
-      "name": "无尽资源3",
-      "detail": "",
-      "is_adult": false
-    },
-    "54": {
       "api": "https://api.yzzy-api.com/inc/ldg_api_all.php/provide/vod",
       "name": "优质资源库",
       "detail": "",
       "is_adult": false
+    },
+    "52": {
+      "name": "🎬豆瓣资源",
+      "api": "https://caiji.dbzy5.com/api.php/provide/vod",
+      "detail": "https://dbzy.tv"
+    },
+    "53": {
+      "_comment": "暂不支持搜索",
+      "name": "🎬索尼资源",
+      "api": "https://suoniapi.com/api.php/provide/vod",
+      "detail": "https://suonizy.net"
+    },
+    "54": {
+      "_comment": " 403 Forbidden ",
+      "name": "🎬樱花资源",
+      "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
+      "detail": "https://yhzy.cc"
+    },
+    "55": {
+      "api": "https://dbzy.tv/api.php/provide/vod",
+      "name": "豆瓣资源"
     }
   },
   "custom_category": [
