@@ -203,6 +203,28 @@
       "name": "优质资源库",
       "detail": "",
       "is_adult": false
+    },
+    "49": {
+      "name": "🎬茅台资源",
+      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
+      "detail": "https://mtzy.me"
+    },
+    "53": {
+      "api": "https://api.okzyw.net/api.php/provide/vod",
+      "name": "TV-OK资源",
+      "detail": "https://okzyw.cc/index.php/label/help.html"
+    },
+    "54": {
+      "api": "https://api.wujinapi.cc/api.php/provide/vod",
+      "name": "无尽资源4",
+      "detail": "",
+      "is_adult": false
+    },
+    "55": {
+      "api": "https://api.wujinapi.net/api.php/provide/vod",
+      "name": "无尽资源3",
+      "detail": "",
+      "is_adult": false
     }
   }
 }
