@@ -99,9 +99,9 @@
       "detail": "https://www.hongniuzy.com"
     },
     "20": {
-      "name": "🎬量子资源",
-      "api": "https://cj.lzcaiji.com/api.php/provide/vod",
-      "detail": "https://cj.lzcaiji.com"
+      "api": "http://ffzy5.tv/api.php/provide/vod",
+      "name": "非凡影视",
+      "detail": "http://ffzy5.tv"
     }
   },
   "custom_category": [
