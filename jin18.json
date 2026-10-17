@@ -234,6 +234,11 @@
       "name": "🎬-爱奇艺-",
       "api": "https://iqiyizyapi.com/api.php/provide/vod",
       "detail": "https://iqiyizyapi.com"
+    },
+    "59": {
+      "api": "https://taopianapi.com/cjapi/mc10/vod/json.html",
+      "name": "TV-淘片资源",
+      "detail": "https://www.taopianzy.com/help.html"
     }
   }
 }
