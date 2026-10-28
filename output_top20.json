@@ -99,9 +99,9 @@
       "detail": "https://www.hongniuzy.com"
     },
     "20": {
-      "api": "http://ffzy5.tv/api.php/provide/vod",
-      "name": "非凡影视",
-      "detail": "http://ffzy5.tv"
+      "name": "🎬如意资源",
+      "api": "https://cj.rycjapi.com/api.php/provide/vod",
+      "detail": "https://www.ryzyw.com"
     }
   },
   "custom_category": [
