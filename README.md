@@ -50,7 +50,7 @@
 
 | 配置源 | 资源数量 | 成人内容 | 适用场景 |
 | - | - | - | - |
-| 🏆 Top20 (output_top20) | 20 个 | 已过滤 | 推荐：综合评分最优的 20 个节点（同名仅留最优变体） |
+| 🏆 Top20 (output_top20) | 16 个 | 已过滤 | 推荐：综合评分最优的 20 个节点（同名仅留最优变体） |
 | 全量 (output) | 43 个 | 已过滤 | 完整功能、最大兼容性（保留多域名变体） |
 | 主配置 (LunaTV-config) | 60 个 | 已过滤 | App 默认配置：手工精选 + 全量变体 |
 
@@ -65,12 +65,12 @@
 
 # API 健康报告（每日自动检测API状态）
 
-## API 状态（最近更新：2026-11-22 12:48 CST）
+## API 状态（最近更新：2026-11-23 13:27 CST）
 
 - 总 API 数量：60
 - 成功 API 数量：53
 - 失败 API 数量：7
-- 平均可用率：89.7%
+- 平均可用率：89.6%
 - 完美可用率（100%）：45 个
 - 高可用率（80%-99%）：8 个
 - 中等可用率（50%-79%）：1 个
@@ -133,10 +133,10 @@
 | ✅ | 快车资源阿 | - | [Link](https://caiji.kuaichezy.org/api.php/provide/vod) | ❌ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
 | ✅ | 无尽资源 | [Link](https://api.wujinapi.net) | [Link](https://api.wujinapi.net/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
 | ✅ | 无水印资源网采集接口 | - | [Link](https://api.wsyzy.net/api.php/provide/vod) | ❌ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 神马资源 | [Link](https://img.smdyw.top) | [Link](https://img.smdyw.top/api.php/provide/vod) | ❌ | 25 | 5 | 83.3% | ✅✅✅✅✅✅✅ |
-| 🚨 | 辣椒资源黄黄 | - | [Link](https://apilj.com/api.php/provide) | ❌ | 17 | 13 | 56.7% | ❌❌❌❌❌❌❌ |
-| 🚨 | 豆瓣资源 | [Link](https://dbzy.tv) | [Link](https://dbzy.tv/api.php/provide/vod) | ❌ | 13 | 17 | 43.3% | ❌❌❌❌❌❌❌ |
-| 🚨 | 豆瓣资源 | [Link](https://dbzy.tv) | [Link](https://caiji.dbzy5.com/api.php/provide/vod) | ❌ | 6 | 24 | 20.0% | ❌❌❌❌❌❌❌ |
+| ✅ | 神马资源 | [Link](https://img.smdyw.top) | [Link](https://img.smdyw.top/api.php/provide/vod) | ❌ | 26 | 4 | 86.7% | ✅✅✅✅✅✅✅ |
+| 🚨 | 辣椒资源黄黄 | - | [Link](https://apilj.com/api.php/provide) | ❌ | 16 | 14 | 53.3% | ❌❌❌❌❌❌❌ |
+| 🚨 | 豆瓣资源 | [Link](https://dbzy.tv) | [Link](https://dbzy.tv/api.php/provide/vod) | ❌ | 12 | 18 | 40.0% | ❌❌❌❌❌❌❌ |
+| 🚨 | 豆瓣资源 | [Link](https://dbzy.tv) | [Link](https://caiji.dbzy5.com/api.php/provide/vod) | ❌ | 5 | 25 | 16.7% | ❌❌❌❌❌❌❌ |
 | 🚨 | 🎬百度云zy | [Link](https://bdzy1.com) | [Link](https://pz.v88.qzz.io/?url=https://api.apibdzy.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ |
 | 🚨 | 🔅飞速资源ᴴ | [Link](http://fszy1.com) | [Link](http://fszy1.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ |
 | 🚨 | 杏吧资源 | [Link](https://sex8zy8.com) | [Link](https://xingba222.com/api.php/provide) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ |
