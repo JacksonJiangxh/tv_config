@@ -83,9 +83,9 @@
       "detail": "https://www.hongniuzy.com"
     },
     "17": {
-      "name": "🎬金鹰点播",
-      "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
-      "detail": "https://jinyingzy.com"
+      "name": "TV-金鹰资源",
+      "api": "https://jyzyapi.com/api.php/provide/vod",
+      "detail": "https://jyzyapi.com"
     },
     "18": {
       "name": "🎬猫眼资源",
@@ -93,10 +93,9 @@
       "detail": "https://www.maoyanzy.com"
     },
     "19": {
-      "_comment": "污染搜索结果",
-      "name": "🎬虎牙资源",
-      "api": "https://www.huyaapi.com/api.php/provide/vod",
-      "detail": "https://www.huyaapi.com"
+      "name": "🎬暴风资源",
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "detail": "https://bfzy.tv"
     },
     "20": {
       "api": "http://ffzy5.tv/api.php/provide/vod",
